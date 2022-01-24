@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+
+<fx:root fx:id="root_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="70.0" styleClass="dragicon" stylesheets="@application.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <ImageView fx:id="close_button" fitHeight="30.0" fitWidth="20.0" layoutX="76.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="-26.0">
+         <image>
+            <Image url="@../../../img/img_cancel_btn.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rotate_button" fitHeight="30.0" fitWidth="20.0" layoutX="76.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-7.0" AnchorPane.rightAnchor="-26.0">
+         <image>
+            <Image url="@../../../img/img_rotate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="edit_button" fitHeight="30.0" fitWidth="20.0" layoutX="96.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="-46.0">
+         <image>
+            <Image url="@../../../img/img_edit_btn.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_height" layoutX="-40.0" layoutY="48.0" />
+            <Label fx:id="draggableZone" layoutX="5.0" layoutY="3.0" prefHeight="90.0" prefWidth="60.0" text="1" wrapText="true" />
+      <Label fx:id="label_width" layoutX="35.0" layoutY="-35.0" />
+      <Line fx:id="lineHeight" endX="-100.0" endY="88.0" layoutX="92.0" layoutY="1.0" startX="-100.0" startY="8.0" strokeWidth="2.0" />
+      <Line fx:id="lineWidth" endX="-40.0" endY="8.0" layoutX="102.0" layoutY="-18.0" startX="-96.0" startY="8.0" strokeWidth="2.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="left_handle" styleClass="left-link-handle" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="25.0" />
+            <AnchorPane fx:id="node_body" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#showActions" prefHeight="200.0" prefWidth="25.0" />
+            <AnchorPane fx:id="right_handle" styleClass="right-link-handle" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="25.0" />
+         </children>
+      </HBox>
+    </children>
+</fx:root>

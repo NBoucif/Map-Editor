@@ -1,0 +1,30 @@
+.icon {
+-fx-background-radius: 10;
+}
+
+.icon-map {
+ -fx-border-style: solid;
+ -fx-border-width: 3;
+}
+
+.icon-shelf {
+    -fx-background-color: grey;
+}
+
+.right-link-handle:hover {
+	-fx-background-radius: 0 0 7 0;
+	-fx-background-color:
+	rgba(255, 255, 255, 0.35);
+}
+
+.left-link-handle:hover {
+	-fx-background-radius: 0 0 0 7;
+	-fx-background-color:
+	rgba(255, 255, 255, 0.35);
+}
+
+.left-link-handleClicked {
+	-fx-background-radius: 0 0 0 7;
+	-fx-background-color:
+	rgba(200, 200, 200, 0.35);
+}
